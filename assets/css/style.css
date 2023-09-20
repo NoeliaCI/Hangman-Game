@@ -75,6 +75,15 @@ h2 {
     
     
 }
+#rules-button {
+    font-size: 2rem;
+    font-family: 'Bad Script', sans-serif;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
 
 /* Game Screen */
 
