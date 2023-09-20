@@ -12,7 +12,7 @@
 
 body {
 
-    background-image: url("/assets/images/background_image.jpg");
+    background-image: url("assets/images/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Bad Script', sans-serif;
