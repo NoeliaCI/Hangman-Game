@@ -95,13 +95,55 @@ h2 {
     background-color: #9f9696;
     opacity: 0.4;
     width: 60%;
-    height: 500px;
+    height: 800px;
     position: absolute;
 
     margin-left: 20%;
     padding: 3em;
     border-radius: 0.6em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+#options-container {
+    text-align: center;
+}
+
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+}
+#options-container h3 {
+    font-size: 2rem;
+    color: #000000 bold;
+}
+#options-container button {
+    font-family: 'Bad Script',sans-serif;
+    font-size: 1.5rem;
+    padding: 0.6em 1.2em;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+}
+#options-container button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+}
+
+#options-container button.active {
+    background-color: #85690c;
+    border: 3px solid #000000;
+    color: #000000;
+}
+canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+    width: 60%;
+    height: 300px;
 }
 
 
