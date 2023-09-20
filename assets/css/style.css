@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 /* asterisk selector to override default styles */
 * {
@@ -14,11 +15,11 @@ body {
     background-image: url("/assets/images/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Bad Script', sans-serif;
 }
 
 h1 {
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Bad Script', sans-serif;
     color: rgb(13, 13, 13);
     font-size: 120px;
     font-weight: lighter;
