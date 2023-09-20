@@ -1,4 +1,7 @@
 //Variables
+const homeContainer = document.getElementsByClassName("home-container");
+const playButton = document.getElementById("play-button");
+const rulesButton = document.getElementById("rules-button");
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
 const userInputSection = document.getElementById("user-input-section");
