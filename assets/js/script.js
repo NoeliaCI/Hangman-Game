@@ -127,3 +127,65 @@ const generateWord = (optionValue) => {
     //Display each element as span
     userInputSection.innerHTML = displayItem;
 };
+//This function is called when the page loads and the user presses new game
+const initializer = () => {
+    winCount = 0;
+    count = 0;
+    //Erase all the content and hide letters and new game button
+    userInputSection.innerHTML = "";
+    optionsContainer.innerHTML = "";
+    letterContainer.classList.add("hide");
+    newGameContainer.classList.add("hide");
+    letterContainer.innerHTML = "";
+    //Creates letter buttons
+    for (let i = 65; i < 91; i++) {
+        let button = document.createElement("button");
+        button.classList.add("letters");
+        //Number to ASCII[A-Z]
+        button.innerText = String.fromCharCode(i);
+        //Listens for the click on the character buttons
+        button.addEventListener("click", () => {
+            let charArray = chosenWord.split("");
+            let dashes = document.getElementsByClassName("dashes");
+            //If array contains a clicked value replaces the matched dash with a letter
+            if (charArray.includes(button.innerText)) {
+                charArray.forEach((char, index) => {
+                    //If character in array is the same as the clicked button
+                    if (char === button.innerText) {
+                        //Replace dash with a letter
+                        dashes[index].innerText = char;
+                        //Increment counter
+                        winCount += 1;
+                        //If winCount equals the word length
+                        if (winCount == charArray.length) {
+                            resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+                            //block all buttons
+                            blocker();
+                        }
+                    }
+                });
+            } else {
+                //Lose count
+                count += 1;
+                //For drawing man
+                drawMan(count);
+                //Count==6 because head, body, left arm, right arm, left leg, right leg
+                if (count == 6) {
+                    resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+                    blocker();
+                }
+            }
+            //Disable the clicked button
+            button.disabled = true;
+        });
+        letterContainer.append(button);
+    }
+
+    displayOptions();
+    //Call to canvasCreator (for clearing previous canvas and creating initial canvas)
+    let { initialDrawing } = canvasCreator();
+    //initialDrawing would draw the frame
+    initialDrawing();
+};
+
+
