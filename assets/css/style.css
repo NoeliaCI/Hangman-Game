@@ -73,7 +73,7 @@ h2 {
     width: 80%;
     cursor: pointer;
     
-    
+  
 }
 #rules-button {
     font-size: 2rem;
@@ -99,6 +99,39 @@ h2 {
     border-radius: 0.6em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
 }
+
+/* Rules Screen */
+#rules-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 60%;
+    
+    font-size: 1.2rem;
+    color: black;
+        background-color: grey;
+        opacity: 0.5;
+       
+        position: absolute;
+        
+        margin-left: 20%;
+        padding: 2em;
+        border-radius: 0.6em;
+        box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+#rules-container h3 {
+    font-size: 2.5rem;
+}
+#home-button {
+    font-size: 2rem;
+        font-family: 'Bad Script', sans-serif;
+        width: 40%;
+        cursor: pointer;
+        margin-top: 5%;
+        border-radius: 10px;
+}
+
 .hide {
     display: none;
 }
