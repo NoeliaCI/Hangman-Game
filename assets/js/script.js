@@ -72,4 +72,34 @@ homeButton.addEventListener('click', () => {
     homeContainer.classList.remove("hide");
 });
 
+// Variables for the count
+let winCount = 0;
+let count = 0;
+
+let chosenWord = "";
+
+//Display the option buttons
+const displayOptions = () => {
+    optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
+    let buttonCon = document.createElement("div");
+    for (let value in options) {
+        buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
+    }
+    optionsContainer.appendChild(buttonCon);
+};
+//Block all the buttons
+const blocker = () => {
+    let optionsButtons = document.querySelectorAll(".options");
+    let letterButtons = document.querySelectorAll(".letters");
+    //Disable all the options
+    optionsButtons.forEach((button) => {
+        button.disabled = true;
+    });
+
+    //Disable all the letters
+    letterButtons.forEach((button) => {
+        button.disabled.true;
+    });
+    newGameContainer.classList.remove("hide");
+};
 
