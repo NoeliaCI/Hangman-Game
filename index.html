@@ -17,6 +17,18 @@
 <title>HangMan</title>
 </head>
 <body>
+    <!-- Home Screen -->
+    <main>
+        <div class="home-container">
+<h2 id="title" aria-label="go to home screen" >HangMan</h2>
+<div class="enter-name">
+    <label for="player-name">Enter Your Name</label>
+    <input type="text" id="player-name" name="name" maxlength="15">
+</div> 
+<div class="play-button-container">
+    <button id="play-button" aria-label="play game">Play</button>
+</div>
+</div>
 <div class="container">
     <div id="options-container"></div>
     <div id="letter-container" class="letter-container hide"></div>
@@ -27,6 +39,7 @@
         <button id="new-game-button">New Game</button>
     </div>
 </div>
+</main>
 <!-- Script -->
     <script src="assets/js/script.js"></script>
 </body>
