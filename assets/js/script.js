@@ -102,4 +102,28 @@ const blocker = () => {
     });
     newGameContainer.classList.remove("hide");
 };
+//Word Generator
+const generateWord = (optionValue) => {
+    let optionsButtons = document.querySelectorAll(".options");
+    //If optionValue matches the button, innerText will highlight the button
+    optionsButtons.forEach((button) => {
+        if (button.innerText.toLowerCase() === optionValue) {
+            button.classList.add("active");
+        }
+        button.disabled = true;
+    });
+    //Hide the letters and clear the previous word
+    letterContainer.classList.remove("hide");
+    userInputSection.innerText = "";
 
+    let optionArray = options[optionValue];
+    //Choose a random word
+    chosenWord = optionArray[Math.floor(Math.random() * optionArray.length)];
+    chosenWord = chosenWord.toUpperCase();
+
+    //Replace every letter with a span containing dash
+    let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
+
+    //Display each element as span
+    userInputSection.innerHTML = displayItem;
+};
