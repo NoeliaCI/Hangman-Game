@@ -22,14 +22,14 @@
         <div class="home-container">
 <h2 id="title" aria-label="go to home screen" >HangMan</h2>
 <div class="enter-name">
-    <label for="player-name">Enter Your Name</label>
+    <label class="player-enter-name" for="player-name">Enter Your Name</label>
     <input type="text" id="player-name" name="name" maxlength="15">
-</div> 
-<div class="play-button-container">
+>
     <button id="play-button" aria-label="play game">Play</button>
+    <button id="rules-button" aria-label="see rules">Rules</button>
 </div>
 </div>
-<div class="container">
+<div class="game-container hide">
     <div id="options-container"></div>
     <div id="letter-container" class="letter-container hide"></div>
     <div id="user-input-section"></div>
