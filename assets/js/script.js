@@ -23,14 +23,23 @@ let options = {
         "Monkey",
         "Salamander",
         "Orangutan",
+        "Rabbit",
+        "Manatee",
+        "Porcupine",
+        "Ostrich",
     ],
     music: [
-        "Madonna",
+        "CyndiLauper",
         "Metallica",
         "Nirvana",
         "Slipknot",
         "Queen",
-        "Shakira",
+        "TinaTurner",
+        "MarilynManson",
+        "RedHotChilliPeppers",
+        "TheRamones",
+        "Greenday",
+
     ],
     instruments: [
         "Clarinet",
@@ -39,6 +48,10 @@ let options = {
         "Accordion",
         "Harmonica",
         "Xylophone",
+        "Electric-Guitar",
+        "Didgeridoo",
+        "Castanets",
+        "Cymbals",
     ],
 };
 
