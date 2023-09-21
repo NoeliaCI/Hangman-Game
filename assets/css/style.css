@@ -9,6 +9,12 @@
 }
 
 /* General Styles*/
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
 
 body {
     display: flex;
@@ -96,12 +102,13 @@ h2 {
 .game-container {
     display: flex;
         flex-direction: column;
+        align-items: center;
     font-size: 16px;
     background-color: #9f9696;
     opacity: 0.6;
     width: 60%;
-    min-height: 100vh;
-    position: absolute;
+    min-height: 50vh;
+    
 
     margin-left: 20%;
     padding: 3em;
@@ -123,6 +130,8 @@ h2 {
 #options-container h3 {
     font-size: 2rem;
     color: #000000 bold;
+    display: flex;
+        justify-content: space-evenly;
 }
 
 #options-container button {
@@ -134,6 +143,9 @@ h2 {
     color: #000000;
     border-radius: 0.3em;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 #options-container button:disabled {
@@ -160,7 +172,8 @@ canvas {
     justify-content: center;
     font-size: 1.8em;
     margin: 0.6em 0 1.2em 0;
-    gap: 3px;
+    gap: 4px;
+    
 }
 
 .letter-container {
@@ -176,14 +189,15 @@ canvas {
     width: 2.4em;
     border-radius: 0.3em;
     background-color: #ffffff;
+    cursor: pointer;
+
 }
 .new-game-popup {
     background-color: #ffffff;
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+   top: 30%;
+    min-height: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,7 +285,8 @@ canvas {
 /* Footer */
 
 footer {
-    position: relative;
+    position: sticky;
+    top: 100%;
     text-align: center;
     background-color: #1c1b1b;
     
