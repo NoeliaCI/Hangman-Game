@@ -4,6 +4,7 @@ const playButton = document.getElementById("play-button");
 const gameContainer = document.getElementById("game-container");
 const rulesButton = document.getElementById("rules-button");
 const homeButton = document.getElementById("home-button");
+const homeButtonRules = document.getElementById("home-button-rules");
 const rulesContainer = document.getElementById("rules-container");
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
@@ -63,11 +64,18 @@ rulesButton.addEventListener('click', () => {
     rulesContainer.classList.remove("hide");
 });
 /**
- * Listens for the click of the home button in the rules screen
+ * Listens for the click of the home button
  * adds or removes the hide class
  * goes back to the home screen
  */
 homeButton.addEventListener('click', () => {
+    rulesContainer.classList.add("hide");
+    newGameContainer.classList.add("hide");
+    gameContainer.classList.add("hide");
+    homeContainer.classList.remove("hide");
+});
+
+homeButtonRules.addEventListener('click', () => {
     rulesContainer.classList.add("hide");
     homeContainer.classList.remove("hide");
 });
