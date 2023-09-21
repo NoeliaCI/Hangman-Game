@@ -93,7 +93,7 @@ h2 {
 .game-container {
     font-size: 16px;
     background-color: #9f9696;
-    opacity: 0.4;
+    opacity: 0.6;
     width: 60%;
     height: 800px;
     position: absolute;
@@ -103,6 +103,7 @@ h2 {
     border-radius: 0.6em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
 }
+
 #options-container {
     text-align: center;
 }
@@ -113,12 +114,14 @@ h2 {
     justify-content: space-between;
     margin: 1.2em 0 2.4em 0;
 }
+
 #options-container h3 {
     font-size: 2rem;
     color: #000000 bold;
 }
+
 #options-container button {
-    font-family: 'Bad Script',sans-serif;
+    font-family: 'Bad Script', sans-serif;
     font-size: 1.5rem;
     padding: 0.6em 1.2em;
     border: 3px solid #000000;
@@ -127,10 +130,11 @@ h2 {
     border-radius: 0.3em;
     text-transform: capitalize;
 }
+
 #options-container button:disabled {
     border: 3px solid #808080;
     color: #808080;
-    background-color: #efefef;
+    background-color: solid #efefef;
 }
 
 #options-container button.active {
@@ -138,6 +142,7 @@ h2 {
     border: 3px solid #000000;
     color: #000000;
 }
+
 canvas {
     display: block;
     margin: auto;
@@ -146,23 +151,31 @@ canvas {
     height: 300px;
 }
 
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+#letter-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+}
 
 
 /* Rules Screen */
 #rules-container {
-    display: ;
     flex-direction: column;
     align-items: center;
-
     width: 60%;
-
     font-size: 1.2rem;
     color: black;
     background-color: grey;
     opacity: 0.5;
-
-
-
     margin-left: 20%;
     padding: 2em;
     border-radius: 0.6em;
