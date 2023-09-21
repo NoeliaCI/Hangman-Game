@@ -4,6 +4,7 @@ const playButton = document.getElementById("play-button");
 const gameContainer = document.getElementById("game-container");
 const rulesButton = document.getElementById("rules-button");
 const homeButton = document.getElementById("home-button");
+const title = document.getElementById("title");
 const homeButtonRules = document.getElementById("home-button-rules");
 const rulesContainer = document.getElementById("rules-container");
 const letterContainer = document.getElementById("letter-container");
@@ -92,6 +93,20 @@ homeButtonRules.addEventListener('click', () => {
     rulesContainer.classList.add("hide");
     homeContainer.classList.remove("hide");
 });
+
+/**
+ * Listens for the click on the game title
+ * adds or removes the hide class
+ * goes back to the home screen
+ */
+title.addEventListener('click', () => {
+    rulesContainer.classList.add("hide");
+    newGameContainer.classList.add("hide");
+    gameContainer.classList.add("hide");
+    homeContainer.classList.remove("hide");
+});
+
+
 //Functions from tutorial in https://www.youtube.com/watch?v=T6uht1A0114&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=24&ab_channel=CodingArtist
 // Variables for the count
 let winCount = 0;
@@ -287,9 +302,14 @@ const drawMan = (count) => {
     }
 };
 
-//New Game
+//Resets game when clicking home button, new game button or game title
 newGameButton.addEventListener("click", initializer);
+homeButton.addEventListener("click", initializer);
+title.addEventListener("click", initializer);
 window.onload = initializer;
+
+
+
 
 
 
