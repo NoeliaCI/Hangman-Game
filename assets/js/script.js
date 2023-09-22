@@ -114,7 +114,7 @@ let count = 0;
 
 let chosenWord = "";
 
-var player;
+let player = document.getElementById("player-name");
 
 
 
