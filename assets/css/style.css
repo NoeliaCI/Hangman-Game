@@ -19,7 +19,7 @@ main {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/assets/images/background-image.jpg");
+    background-image: url('/assets/images/background-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Bad Script', sans-serif;
@@ -99,6 +99,11 @@ h2 {
 
 
 }
+button:hover {
+ transform: scale(1.1);
+ transition: transform 0.3s ease-in-out;
+}
+
 
 /* Game Screen */
 
@@ -362,8 +367,8 @@ footer {
     }
 
     #player-name {
-        height: 1em;
-        font-size: 1.5rem;
+        height: 2.5em;
+        font-size: 1.2rem;
     }
 
     #play-button {
