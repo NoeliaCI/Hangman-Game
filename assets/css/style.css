@@ -132,7 +132,7 @@ h2 {
 
 #options-container h3 {
     font-size: 2rem;
-    color: #000000 bold;
+    color: #000000;
     display: flex;
     justify-content: space-evenly;
 }
@@ -154,7 +154,7 @@ h2 {
 #options-container button:disabled {
     border: 3px solid #808080;
     color: #808080;
-    background-color: solid #efefef;
+    background-color: #efefef;
 }
 
 #options-container button.active {
@@ -450,7 +450,6 @@ footer {
     .game-container {
         width: 80%;
         margin-left: 10%;
-        margin-bottom: ;
         margin-top: 30%;
     }
 
