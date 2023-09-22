@@ -427,7 +427,10 @@ footer {
         height: 1000px;
     }
     #result-text p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    #result-text h2 {
+        font-size: 1.8rem;
     }
     
     #new-game-button {
