@@ -49,7 +49,7 @@ let options = {
         "Accordion",
         "Harmonica",
         "Xylophone",
-        "Electric-Guitar",
+        "Guitar",
         "Didgeridoo",
         "Castanets",
         "Cymbals",
@@ -114,6 +114,10 @@ let count = 0;
 
 let chosenWord = "";
 
+var player;
+
+
+
 //Display the option buttons
 const displayOptions = () => {
     optionsContainer.innerHTML += `<h3>Please Select A Category</h3>`;
@@ -163,7 +167,7 @@ const generateWord = (optionValue) => {
     //Display each element as span
     userInputSection.innerHTML = displayItem;
 };
-//This function is called when the page loads and the user presses new game
+//This function is called when the user presses new game
 const initializer = () => {
     winCount = 0;
     count = 0;
@@ -194,7 +198,7 @@ const initializer = () => {
                         winCount += 1;
                         //If winCount equals the word length
                         if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+                            resultText.innerHTML = `<h2 class='win-msg'>You Win ${player}!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                             //block all buttons
                             blocker();
                         }
@@ -207,7 +211,7 @@ const initializer = () => {
                 drawMan(count);
                 //Count==6 because head, body, left arm, right arm, left leg, right leg
                 if (count == 6) {
-                    resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+                    resultText.innerHTML = `<h2 class='lose-msg'>You Lose ${player}!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                     blocker();
                 }
             }
@@ -301,16 +305,25 @@ const drawMan = (count) => {
             break;
     }
 };
-
-//Resets game when clicking home button, new game button or game title
-newGameButton.addEventListener("click", initializer);
+//Resets the game when clicking home button, new game button or game title
+        
 homeButton.addEventListener("click", initializer);
-title.addEventListener("click", initializer);
+title.addEventListener("click", initializer);        
+newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
 
+//Function to submit the player name
+document.addEventListener("DOMContentLoaded", function () {
+    //Gets player name from localStorage
+    if (localStorage.getItem("player")) {
+        document.getElementById("player-name").value =
+            localStorage.getItem("player");
+    }
+    /** This event sets the game taking player name in order to start */
+    playButton.addEventListener("click", function () {
+        //Save player in localStorage
+        localStorage.setItem("player", player);
+        player = document.getElementById("player-name").value;
 
-
-
-
-
-
+    });
+});
