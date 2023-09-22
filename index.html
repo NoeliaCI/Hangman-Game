@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta
       name="Description"
       content="An interactive Hangman Game for users looking for fun"
     />
-    <meta name="keywords" content="Hangman, Words, Fun, Games, Entertainment" />
-    <!-- Links for Favicon -->
-
+    <meta name="keywords" content="Hangman, Words, Fun, Games, Entertainment">
+    <meta name="author" content="Noelia Hurtado Gomez">
     <!-- Script for Font Awesome -->
     <script
       src="https://kit.fontawesome.com/56057ee4fe.js"
       crossorigin="anonymous"
     ></script>
     <!-- Link to style file -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--Link for Title Icon -->
-    <link rel="icon" type="image/png" href="assets/images/hang_icon.png" />
+    <link rel="icon" type="image/png" href="assets/images/hang_icon.png">
     <title>HangMan</title>
   </head>
   <body>
@@ -29,11 +28,11 @@
       </header>
       <!-- Home Screen -->
       <div id="home-container" class="home-container">
-        <div id ="enter-name">
-          <label id ="player-enter-name" for="player-name"
+        <div id="enter-name">
+          <label id="player-enter-name" for="player-name"
             >Enter Your Name</label
           >
-          <input type="text" id="player-name" name="name" maxlength="15" />
+          <input type="text" id="player-name" name="name" maxlength="15">
           <button id="play-button" aria-label="play game">Play</button>
           <button id="rules-button" aria-label="see rules">Rules</button>
         </div>
@@ -48,42 +47,74 @@
           <div id="result-text"></div>
           <button id="new-game-button">New Game</button>
           <button id="home-button">Home</button>
-
         </div>
       </div>
       <!-- Rules Screen -->
       <div id="rules-container" class="rules-container hide">
         <h3>Rules</h3>
-        <p>Choose betwen 3 categories: Animals, music bands/singers and instruments.</p>
+        <p>
+          Choose betwen 3 categories: Animals, music bands/singers and
+          instruments.
+        </p>
         <p>Guess the letters in the secret word to solve the puzzle.</p>
         <p>You can guess a letter by clicking it.</p>
-        <p>If that letter is in the word it will appear in every place it belongs.</p>
-        <p>If the letter isn't in the word then a body part will be added to the gallows.</p>
-        <p>You can keep guessing letters until the word is solved or until all six body parts are on the gallows.</p>
+        <p>
+          If that letter is in the word it will appear in every place it
+          belongs.
+        </p>
+        <p>
+          If the letter isn't in the word then a body part will be added to the
+          gallows.
+        </p>
+        <p>
+          You can keep guessing letters until the word is solved or until all
+          six body parts are on the gallows.
+        </p>
         <p>Good luck and have fun!</p>
         <button id="home-button-rules">Home</button>
       </div>
     </main>
     <!-- Footer -->
     <footer>
-        <!-- Social Media Links -->
-        <div>
-            <ul class="social-media">
-                <li>
-                    <a href="https://github.com/NoeliaCI" target="_blank" rel="noopener"
-                        aria-label="Visit my GitHub profile (it opens in a new tab)"><i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/noelia-hurtado-gómez-268540267" target="_blank" rel="noopener"
-                        aria-label="Visit my LinkedIn profile (it opens in a new tab)"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit Instagram (it opens in a new tab)"><i class="fab fa-instagram fa-2xl"></i></a>
-                </li>
-            </ul>
-            <p class="copyright">© 2023 Noelia Hurtado Gómez</p>
-        </div>
+      <!-- Social Media Links -->
+      <div>
+        <ul class="social-media">
+          <li>
+            <a
+              href="https://github.com/NoeliaCI"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my GitHub profile (it opens in a new tab)"
+              ><i
+                class="fa-brands fa-square-github fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/noelia-hurtado-gómez-268540267"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my LinkedIn profile (it opens in a new tab)"
+              ><i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit Instagram (it opens in a new tab)"
+              ><i class="fab fa-instagram fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="copyright">© 2023 Noelia Hurtado Gómez</p>
+      </div>
     </footer>
     <!-- Script -->
     <script src="assets/js/script.js"></script>
