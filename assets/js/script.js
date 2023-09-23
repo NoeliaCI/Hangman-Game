@@ -28,6 +28,11 @@ let options = {
         "Manatee",
         "Porcupine",
         "Ostrich",
+        "Platypus",
+        "Donkey",
+        "Magpie",
+        "Butterfly",
+        "Peacock",
     ],
     music: [
         "Blondie",
@@ -39,7 +44,12 @@ let options = {
         "Survivor",
         "Korn",
         "Ramones",
-        "Greenday",
+        "Motorhead",
+        "Accept",
+        "Helloween",
+        "Genesis",
+        "Oasis",
+        "Muse",
 
     ],
     instruments: [
@@ -53,6 +63,11 @@ let options = {
         "Didgeridoo",
         "Castanets",
         "Cymbals",
+        "Trombone",
+        "Bagpipes",
+        "Keyboard",
+        "Mandolin",
+        "Ukelele",
     ],
 };
 
