@@ -1,39 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **HangMan Game**
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+[The HangMan Game](https://noeliaci.github.io/Hangman-Game/) is an online old school game where the goal is
+ to find the missing word by guessing letters. The game has three different categories to choose from: Animals, Music Bands
+ and Instruments. The player can guess a letter by clicking on it. The game finishes when the player has correctly guessed 
+all the letters or when all six body parts are on the gallows.
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![web on different screens](/assets/documentation/am-i-responsive.png)
 
 ---
+## **Table of Contents**
 
-Happy coding!
+- [**HangMan Game**](#hangman-game)
+  - [**Table of Contents**](#table-of-contents)
+  - [**Target Audience**](#target-audience)
+  - [**User Stories**](#user-stories)
+    - [**First Time User Goals**](#first-time-user-goals)
+    - [**Returning User Goals**](#returning-user-goals)
+    - [**Frequent User Goals**](#frequent-user-goals)
+  - [**Design**](#design)
+    - [**Color Theme**](#color-theme)
+    - [**Font**](#font)
+  - [**Wireframes**](#wireframes)
+  - [**Features**](#features)
+    - [**Header**](#header)
+    - [**Footer**](#footer)
+    - [**Home Screen**](#home-screen)
+    - [**Categories Screen**](#categories-screen)
+    - [**Game Screen**](#game-screen)
+    - [**Result Screen**](#result-screen)
+    - [**Rules Screen**](#rules-screen)
+    - [**Features Left to Implement**](#features-left-to-implement)
+  - [**Technologies Used**](#technologies-used)
+  - [**Testing**](#testing)
+  - [**Browser Testing**](#browser-testing)
+  - [**Responsiveness**](#responsiveness)
+  - [**Validators**](#validators)
+  - [**Lighthouse**](#lighthouse)
+  - [**Bugs**](#bugs)
+    - [**Solved**](#solved)
+    - [**Unsolved**](#unsolved)
+  - [**Deployment**](#deployment)
+  - [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+  
+
+## **Target Audience**
+
+- Users who look for interactive online games.
+- Users who want to challenge their language knowdlege.
+- Users who enjoy playing word games.
+
+## **User Stories**
+### **First Time User Goals**
+
+- As a first time user, I want to understand the purpose of the website, so I can learn about what is offered.
+- As a first time user, I want to find rules or instructions sections, so I can understand the objective of the game.
+- As a first time user, I want to easily navigate through the website, so I can quickly go from one section to another.
+
+### **Returning User Goals**
+
+- As a returning user, I want the game to have different categories, so I can test my skills in different areas.
+- As a returning user, I want to be able to enter my user name, so I can have a personalised experience.
+- As a returning user, I want the website to have social media links, so I can share my experience playing the game.
+
+### **Frequent User Goals**
+
+- As a frequent user, I want the game to be responsive, so I can play it from different devices.
+  
+## **Design**
+### **Color Theme**
+
+### **Font**
+
+## **Wireframes**
+
+## **Features**
+### **Header**
+### **Footer**
+### **Home Screen**
+### **Categories Screen**
+### **Game Screen**
+### **Result Screen**
+### **Rules Screen**
+### **Features Left to Implement**
+
+## **Technologies Used**
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [GitHub](https://github.com/)
+- [Codeanywhere](https://app.codeanywhere.com/)
+
+## **Testing**
+
+- I tested that this web page works in different browsers: Chrome, Firefox, Edge.
+- I used devtools device toolbar to confirm that the website is responsive and looks good on all standard screen sizes.
+- I tested all the links and confirmed that they work and lead where they should.
+- I tested entering a name and checked that it is showing on the result screen.
+- I tested the game playing in the different categories to make sure that everything works as it should.
+
+## **Browser Testing**
+
+## **Responsiveness**
+
+## **Validators**
+
+## **Lighthouse**
+
+## **Bugs**
+
+### **Solved**
+
+### **Unsolved**
+
+## **Deployment**
+
+## **Credits**
+
+### **Content**
+
+### **Media**
+
+
