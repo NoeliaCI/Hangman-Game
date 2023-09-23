@@ -14,6 +14,11 @@ const newGameContainer = document.getElementById("new-game-container");
 const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
+//Game Sounds
+const winSound = new Audio('assets/sounds/win-sound.wav');
+const loseSound = new Audio('assets/sounds/lose-sound.wav');
+const clickSound = new Audio('assets/sounds/mouse-click.wav');
+
 
 //Arrays
 let options = {
@@ -80,6 +85,7 @@ let options = {
  */
 
 playButton.addEventListener('click', () => {
+    clickSound.play();
     homeContainer.classList.add("hide");
     gameContainer.classList.remove("hide");
 });
@@ -89,6 +95,7 @@ playButton.addEventListener('click', () => {
  * enters the rules screen
  */
 rulesButton.addEventListener('click', () => {
+    clickSound.play();
     homeContainer.classList.add("hide");
     rulesContainer.classList.remove("hide");
 });
@@ -98,6 +105,7 @@ rulesButton.addEventListener('click', () => {
  * goes back to the home screen
  */
 homeButton.addEventListener('click', () => {
+    clickSound.play();
     rulesContainer.classList.add("hide");
     newGameContainer.classList.add("hide");
     gameContainer.classList.add("hide");
@@ -105,6 +113,7 @@ homeButton.addEventListener('click', () => {
 });
 
 homeButtonRules.addEventListener('click', () => {
+    clickSound.play();
     rulesContainer.classList.add("hide");
     homeContainer.classList.remove("hide");
 });
@@ -115,11 +124,13 @@ homeButtonRules.addEventListener('click', () => {
  * goes back to the home screen
  */
 title.addEventListener('click', () => {
+    clickSound.play();
     rulesContainer.classList.add("hide");
     newGameContainer.classList.add("hide");
     gameContainer.classList.add("hide");
     homeContainer.classList.remove("hide");
 });
+
 
 
 //Functions from tutorial in https://www.youtube.com/watch?v=T6uht1A0114&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=24&ab_channel=CodingArtist
@@ -135,12 +146,16 @@ let player = document.getElementById("player-name");
 
 //Display the option buttons
 const displayOptions = () => {
+    
     optionsContainer.innerHTML += `<h3>Please Select A Category</h3>`;
     let buttonCon = document.createElement("div");
     for (let value in options) {
+        
         buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
     }
+    
     optionsContainer.appendChild(buttonCon);
+    
 };
 //Block all the buttons
 const blocker = () => {
@@ -155,6 +170,7 @@ const blocker = () => {
     letterButtons.forEach((button) => {
         button.disabled.true;
     });
+    
     newGameContainer.classList.remove("hide");
 };
 //Word Generator
@@ -186,6 +202,7 @@ const generateWord = (optionValue) => {
 const initializer = () => {
     winCount = 0;
     count = 0;
+    clickSound.play();
     //Erase all the content and hide letters and new game button
     userInputSection.innerHTML = "";
     optionsContainer.innerHTML = "";
@@ -216,6 +233,7 @@ const initializer = () => {
                             resultText.innerHTML = `<h2 class='win-msg'>You Win ${player}!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                             //block all buttons
                             blocker();
+                            winSound.play();
                         }
                     }
                 });
@@ -228,6 +246,7 @@ const initializer = () => {
                 if (count == 6) {
                     resultText.innerHTML = `<h2 class='lose-msg'>You Lose ${player}!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                     blocker();
+                    loseSound.play();
                 }
             }
             //Disable the clicked button
@@ -241,6 +260,7 @@ const initializer = () => {
     let { initialDrawing } = canvasCreator();
     //initialDrawing would draw the frame
     initialDrawing();
+    
 };
 //Constant to create canvas
 const canvasCreator = () => {
