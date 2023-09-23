@@ -125,7 +125,14 @@ button:hover {
 }
 
 #options-container {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #options-container div {
