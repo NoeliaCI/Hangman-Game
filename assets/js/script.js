@@ -202,7 +202,6 @@ const generateWord = (optionValue) => {
 const initializer = () => {
     winCount = 0;
     count = 0;
-    clickSound.play();
     //Erase all the content and hide letters and new game button
     userInputSection.innerHTML = "";
     optionsContainer.innerHTML = "";
