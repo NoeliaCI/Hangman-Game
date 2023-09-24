@@ -40,8 +40,8 @@ h2 {
         1px 3px 1px #b8b4b4,
         1px 4px 1px #b8b4b4,
         1px 5px 1px #b8b4b4,
-        1px 6px 1px #b8b4b4,
-        1px 7px 1px #b8b4b4,
+        1px 6px 1px #efefef,
+        1px 7px 1px #efefef,
         1px 18px 6px rgba(16, 16, 16, 0.4),
         1px 22px 10px rgba(16, 16, 16, 0.2),
         1px 25px 35px rgba(16, 16, 16, 0.2),
@@ -66,7 +66,7 @@ h2 {
 
 #player-enter-name {
     font-size: 3rem;
-    color: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
 }
 
 #player-name {
@@ -86,6 +86,7 @@ h2 {
     margin-top: 30px;
     border-radius: 10px;
     background-color: rgb(80, 96, 80);
+    color: #efefef;
 
 
 }
@@ -98,6 +99,7 @@ h2 {
     margin-top: 5%;
     border-radius: 10px;
     background-color: rgb(80, 96, 80);
+    color: #efefef;
 
 
 }
