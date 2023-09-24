@@ -1,16 +1,14 @@
 # **HangMan Game**
 
-
-
-[The HangMan Game](https://noeliaci.github.io/Hangman-Game/) is an online old school game where the goal is
+[HangMan Game](https://noeliaci.github.io/Hangman-Game/) is an online old school game where the goal is
  to find the missing word by guessing letters. The game has three different categories to choose from: Animals, Music Bands
  and Instruments. The player can guess a letter by clicking on it. The game finishes when the player has correctly guessed 
 all the letters or when all six body parts are on the gallows.
 
-
-![web on different screens](/assets/documentation/am-i-responsive.png)
+![web on different screens](assets/documentation/am-I-responsive/Home-Screen.png)
 
 ---
+
 ## **Table of Contents**
 
 - [**HangMan Game**](#hangman-game)
@@ -24,6 +22,9 @@ all the letters or when all six body parts are on the gallows.
     - [**Color Theme**](#color-theme)
     - [**Font**](#font)
   - [**Wireframes**](#wireframes)
+    - [**Desktop**](#desktop)
+    - [**Tablet**](#tablet)
+    - [**Mobile**](#mobile)
   - [**Features**](#features)
     - [**Header**](#header)
     - [**Footer**](#footer)
@@ -47,7 +48,6 @@ all the letters or when all six body parts are on the gallows.
     - [**Content**](#content)
     - [**Media**](#media)
   
-
 ## **Target Audience**
 
 - Users who look for interactive online games.
@@ -55,6 +55,7 @@ all the letters or when all six body parts are on the gallows.
 - Users who enjoy playing word games.
 
 ## **User Stories**
+
 ### **First Time User Goals**
 
 - As a first time user, I want to understand the purpose of the website, so I can learn about what is offered.
@@ -69,26 +70,92 @@ all the letters or when all six body parts are on the gallows.
 
 ### **Frequent User Goals**
 
-- As a frequent user, I want the game to be responsive, so I can play it from different devices.
+- As a frequent user, I want the game to be responsive, so I can play it on different devices.
   
 ## **Design**
+
 ### **Color Theme**
+
+![colour theme](/assets/documentation/colour-theme.png)
+
+- The colour theme used for this project is a gradient bakground in green tones.
 
 ### **Font**
 
+![font type](/assets/documentation/font.png)
+
+- The font used is Bad Script. This font resembles the handwritting which make it adequate for a words game.
+
 ## **Wireframes**
 
+### **Desktop**
+
+![wireframe desktop](/assets/documentation/Wireframes/Wireframe-desktop.png)
+
+### **Tablet**
+
+![wireframe tablet](/assets/documentation/Wireframes/Wireframe-tablet.png)
+
+### **Mobile**
+
+![wireframe mobile](/assets/documentation/Wireframes/Wireframe-mobile.png)
+
 ## **Features**
+
 ### **Header**
+
+- The header is the title of the game which is centered and emphasized with a text shadow.
+- It displays in every screen and when clicked, it takes the user back to the home screen.
+
+![title image](/assets/documentation/features/title.png)
+
 ### **Footer**
+
+- The footer contains links for GitHub, LinkedIn and Instagram and the name of the author.
+
+![footer image](/assets/documentation/features/footer.png)
+
 ### **Home Screen**
+
+- The home screen contains two buttons:
+  - Play - takes the user to the category screen.
+  - Rules - takes the user to the rules screen.
+  - Both buttons play a sound effect when clicked.
+- The home screen also contains a name form that, when filled, personalizes the result message.
+
+![home screen image](/assets/documentation/features/home-screen.png)
+
 ### **Categories Screen**
+
+- The categories screen displays three category buttons:
+  - Animals
+  - Music Bands
+  - Instruments
+- When one category is selected the button turns a different colour and the two other buttons can not be clicked.
+- This screen also displays the canvas where the hangman will be draw.
+
+![category screen](/assets/documentation/features/categories-screen.png)
+
 ### **Game Screen**
+
+- The game screen displays the selected category button in a different colour and the two other category buttons disabled.
+- It contains the keyboard where the user can click on the letters to guess the word.
+- The character buttons disable once they are clicked and the letters replace the dashes in the word to guess.
+- The canvas area displays a body part of the hangman every time an incorrect letter is clicked.
+- The game ends when all the corect letters are displayed in the word area or when all the body parts of the hangman are displayed.
+  
+![game screen image](/assets/documentation/features/game-screen.png)
+  
 ### **Result Screen**
+
+
 ### **Rules Screen**
+
+
 ### **Features Left to Implement**
 
 ## **Technologies Used**
+
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
