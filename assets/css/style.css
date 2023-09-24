@@ -214,10 +214,8 @@ canvas {
     cursor: pointer;
 
 }
-
-
-#new-game-container {
-    height: 100%;
+#new-game-container{
+    margin-top: 30%;
 }
 .new-game-popup {
     color: rgb(255, 250, 250);
@@ -425,12 +423,11 @@ footer {
     }
 
    #options-container {
-    margin-right: 37%;
+       display: grid;
    }
 
     #options-container h3 {
         font-size: 1.5rem;
-        margin-left: 25%;
         }
     #options-container button {
          font-size: 1rem;
@@ -479,11 +476,7 @@ footer {
     }
 
 /* Result Screen */
-    .new-game-popup {
-        top: 38%;
-        width: 80%;
-        height: 1000px;
-    }
+   
     #new-game-button {
         width: 40%;
     }
