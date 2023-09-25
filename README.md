@@ -204,15 +204,15 @@ all the letters or when all six body parts are on the gallows.
 
 - Home Screen
 
-![home screen responsive](/assets/documentation/am-I-responsive/Home-Screen.png)
+![home screen responsive](/assets/documentation/am-I-responsive/responsive-home.png)
 
 - Rules Screen
 
-![rules screen responsive](/assets/documentation/am-I-responsive/Rules-Screen.png)
+![rules screen responsive](/assets/documentation/am-I-responsive/responsive-rules.png)
 
 - Categories Screen
 
-![categories screen responsive](/assets/documentation/am-I-responsive/Category-Screen.png)
+![categories screen responsive](/assets/documentation/am-I-responsive/responsive-categories.pngpng)
 
 - Game Screen
 
