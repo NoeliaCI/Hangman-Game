@@ -142,17 +142,33 @@ all the letters or when all six body parts are on the gallows.
 - It contains the keyboard where the user can click on the letters to guess the word.
 - The character buttons disable once they are clicked and the letters replace the dashes in the word to guess.
 - The canvas area displays a body part of the hangman every time an incorrect letter is clicked.
-- The game ends when all the corect letters are displayed in the word area or when all the body parts of the hangman are displayed.
+- The game ends when all the correct letters are displayed in the word area or when all the body parts of the hangman are displayed.
   
 ![game screen image](/assets/documentation/features/game-screen.png)
   
 ### **Result Screen**
 
+- The result screen appears when the game is over.
+- It displays  a different message depending on the result of the game.
+- It also displays the correct word and the player name in both messages.
+- It contais two buttons:
+  - New Game - leads to the category screen to start a new game.
+  - Home - leads to the home screen.
+
+![result screen](/assets/documentation/features/result-screen.png)  
 
 ### **Rules Screen**
 
+- The rules screen displays when the rules button in the home screen is clicked.
+- It contains the instructions to play the game.
+- It contains a home button that takes the user back to the home screen when clicked.
+
+![rules screen](/assets/documentation/features/rules-screen.png)
 
 ### **Features Left to Implement**
+
+- Score tracking and leaderboard in order to keep the user engaged.
+- 404 error page.
 
 ## **Technologies Used**
 
@@ -172,7 +188,39 @@ all the letters or when all six body parts are on the gallows.
 
 ## **Browser Testing**
 
+- Chrome
+
+![chrome browser](/assets/documentation/browsers/chrome-browser.png)
+
+- Edge
+
+![edge browser](/assets/documentation/browsers/edge-browser.jpeg)
+
+- Firefox
+
+![firefox browser](/assets/documentation/browsers/firefox-browser.png)
+
 ## **Responsiveness**
+
+- Home Screen
+
+![home screen responsive](/assets/documentation/am-I-responsive/Home-Screen.png)
+
+- Rules Screen
+
+![rules screen responsive](/assets/documentation/am-I-responsive/Rules-Screen.png)
+
+- Categories Screen
+
+![categories screen responsive](/assets/documentation/am-I-responsive/Category-Screen.png)
+
+- Game Screen
+
+![game screen responsive](/assets/documentation/am-I-responsive/Game-Screen.png)
+
+- Result Screen
+
+![result screen responsive](/assets/documentation/am-I-responsive/Result-Screen.png)
 
 ## **Validators**
 
