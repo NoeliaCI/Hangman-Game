@@ -312,7 +312,23 @@ canvas {
 }
 
 .hide {
-    display: none;
+    display: none !important;
+}
+/* Sound Section */
+
+#sounds-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#volume-toggle {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 /* Footer */
