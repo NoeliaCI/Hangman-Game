@@ -187,7 +187,7 @@ let count = 0;
 
 let chosenWord = "";
 
-let player = document.getElementById("player-name");
+let player = document.getElementById("player-name").value;
 
 
 
