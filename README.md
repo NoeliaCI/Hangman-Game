@@ -5,7 +5,7 @@
  and Instruments. The player can guess a letter by clicking on it. The game finishes when the player has correctly guessed 
 all the letters or when all six body parts are on the gallows.
 
-![web on different screens](assets/documentation/am-I-responsive/Home-Screen.png)
+![web on different screens](assets/documentation/am-I-responsive/responsive-home.png)
 
 ---
 
@@ -104,8 +104,9 @@ all the letters or when all six body parts are on the gallows.
 
 ### **Header**
 
-- The header is the title of the game which is centered and emphasized with a text shadow.
-- It displays in every screen and when clicked, it takes the user back to the home screen.
+- The header contains the title of the game which is centered and emphasized with a text shadow.
+- The title displays in every screen and when clicked, it takes the user back to the home screen.
+- The header also contains a sound button to allow the user decide on playing with or without sound.
 
 ![title image](/assets/documentation/features/title.png)
 
@@ -212,15 +213,15 @@ all the letters or when all six body parts are on the gallows.
 
 - Categories Screen
 
-![categories screen responsive](/assets/documentation/am-I-responsive/responsive-categories.pngpng)
+![categories screen responsive](/assets/documentation/am-I-responsive/responsive-categories.png)
 
 - Game Screen
 
-![game screen responsive](/assets/documentation/am-I-responsive/Game-Screen.png)
+![game screen responsive](/assets/documentation/am-I-responsive/responsive-game.png)
 
 - Result Screen
 
-![result screen responsive](/assets/documentation/am-I-responsive/Result-Screen.png)
+![result screen responsive](/assets/documentation/am-I-responsive/responsive-result.png)
 
 ## **Validators**
 
