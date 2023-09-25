@@ -10,11 +10,6 @@
     />
     <meta name="keywords" content="Hangman, Words, Fun, Games, Entertainment">
     <meta name="author" content="Noelia Hurtado Gomez">
-    <!-- Script for Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/56057ee4fe.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Link to style file -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Link for Title Icon -->
@@ -22,22 +17,39 @@
     <title>HangMan</title>
   </head>
   <body>
-    <main>
-      <header>
-        <div id="sounds-container" class="sound">
+    <header>
+      <div id="sounds-container" class="sound">
         <p>Sound</p>
-            <i id="sound-on" class="fas fa-volume-up fa-xl hide" style="color: black"></i>
-            <i id="sound-off" class="fas fa-volume-mute fa-xl" style="color: black"></i>
-        </div>
-        <h2 id="title" aria-label="go to home screen">HangMan</h2>
-      </header>
+
+        <button id="volume-toggle">
+          <i
+            id="sound-on"
+            class="fas fa-volume-up fa-xl hide"
+            style="color: black"
+          ></i>
+          <i
+            id="sound-off"
+            class="fas fa-volume-mute fa-xl"
+            style="color: black"
+          ></i>
+        </button>
+      </div>
+      <h2 id="title" aria-label="go to home screen">HangMan</h2>
+    </header>
+    <main>
       <!-- Home Screen -->
       <div id="home-container" class="home-container">
         <div id="enter-name">
           <label id="player-enter-name" for="player-name"
             >Enter Your Name</label
           >
-          <input type="text" id="player-name" placeholder="Your name" name="name" maxlength="10">
+          <input
+            type="text"
+            id="player-name"
+            placeholder="Your name"
+            name="name"
+            maxlength="10"
+          />
           <button id="play-button" aria-label="play game">Play</button>
           <button id="rules-button" aria-label="see rules">Rules</button>
         </div>
@@ -121,6 +133,11 @@
         <p class="copyright">© 2023 Noelia Hurtado Gómez</p>
       </div>
     </footer>
+    <!-- Script for Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/56057ee4fe.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Script -->
     <script src="assets/js/script.js"></script>
   </body>
