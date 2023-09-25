@@ -19,6 +19,53 @@ const winSound = new Audio('assets/sounds/win-sound.wav');
 const loseSound = new Audio('assets/sounds/lose-sound.wav');
 const clickSound = new Audio('assets/sounds/mouse-click.wav');
 
+const volumeOnBtn = document.getElementById("sound-on");
+const volumeOffBtn = document.getElementById("sound-off");
+const volumeToggleBtn = document.getElementById("volume-toggle");
+
+let volume = 0;
+winSound.volume = 0;
+loseSound.volume = 0;
+clickSound.volume = 0;
+
+//Volume toggle
+volumeToggleBtn.addEventListener("click", () => {
+    console.log("volume toggle");
+    if (volume === 0) {
+        winSound.volume = .7;
+        loseSound.volume = .7;
+        clickSound.volume = .7;
+        volumeOnBtn.classList.remove("hide");
+        volumeOffBtn.classList.add("hide");
+        volume = 1;
+    } else {
+        winSound.volume = 0;
+        loseSound.volume = 0;
+        clickSound.volume = 0;
+        volumeOnBtn.classList.add("hide");
+        volumeOffBtn.classList.remove("hide");
+        volume = 0;
+    }
+});
+// //Volume on
+volumeOnBtn.addEventListener("click", () => {
+     console.log("volume on");
+     winSound.volume = .7;
+     loseSound.volume = .7;
+     clickSound.volume = .7;
+     volumeOnBtn.classList.add("hide");
+     volumeOffBtn.classList.remove("hide");
+ });
+//Volume off
+volumeOnBtn.addEventListener("click", () => {
+    console.log("volume off");
+     winSound.volume = 0;
+     loseSound.volume = 0;
+     clickSound.volume = 0;
+    volumeOnBtn.classList.remove("hide");
+    volumeOffBtn.classList.add("hide");
+ });
+
 
 //Arrays
 let options = {
@@ -356,8 +403,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /** This event sets the game taking player name in order to start */
     playButton.addEventListener("click", function () {
         //Save player in localStorage
-        localStorage.setItem("player", player);
         player = document.getElementById("player-name").value;
+        localStorage.setItem("player", player);
 
     });
 });
