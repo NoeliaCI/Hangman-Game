@@ -13,6 +13,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 
 }
 
@@ -216,6 +217,7 @@ canvas {
 }
 #new-game-container{
     margin-top: 30%;
+    margin-bottom: 20%;
 }
 .new-game-popup {
     color: rgb(255, 250, 250);
