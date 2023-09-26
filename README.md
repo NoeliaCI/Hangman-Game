@@ -112,7 +112,7 @@ all the letters or when all six body parts are on the gallows.
 
 ### **Footer**
 
-- The footer contains links for GitHub, LinkedIn and Instagram and the name of the author.
+- The footer contains links for social media and the name of the author.
 
 ![footer image](/assets/documentation/features/footer.png)
 
@@ -132,7 +132,7 @@ all the letters or when all six body parts are on the gallows.
   - Animals
   - Music Bands
   - Instruments
-- When one category is selected the button turns a different colour and the two other buttons can not be clicked.
+- When one category is selected the button turns into a different colour and the two other buttons can not be clicked.
 - This screen also displays the canvas where the hangman will be drawn.
 
 ![category screen](/assets/documentation/features/categories-screen.png)
@@ -181,7 +181,7 @@ all the letters or when all six body parts are on the gallows.
 
 ## **Testing**
 
-- I tested that this web page works in different browsers: Chrome, Firefox, Edge.
+- I tested that this website works in different browsers: Chrome, Firefox, Edge.
 - I used devtools device toolbar to confirm that the website is responsive and looks good on all standard screen sizes.
 - I tested all the links and confirmed that they work and lead where they should.
 - I tested entering a name and checked that it is showing on the result screen.
@@ -239,15 +239,17 @@ all the letters or when all six body parts are on the gallows.
 
 ## **Lighthouse**
 
+[lighthouse validation](/assets/documentation/lighthouse/lighthouse.jpg)
+
 ## **Bugs**
 
 ### **Solved**
 
-- When trying to set the icon for the sound it didn't respond to any action and the icon with class hide didn't hide at all. This issue was solved by wrapping the icons inside a button element and placing !important in the hide element in css. Despite not being the best practice for css the solution worked.
+- When trying to set the icon for the sound, it didn't respond to any action and the icon with class hide didn't hide at all. This issue was solved by wrapping the icons inside a button element and placing !important in the hide element in css. Despite not being the best practice for css the solution worked.
 
 ### **Unsolved**
 
-- When entering the web for the first time, a placeholder saying [object HTMLInputElement] is sometimes showing instead of the placeholder "your name" in the player name input section. I tried to solve it by adding .value when declaring the variable for the player name, giving an autocomplete attribute to the user input and also tried other suggestions found in the stack overflow website but none of them worked and it is still showing. After entering a player name it does not happen again.
+- When entering the web for the first time, a placeholder saying [object HTMLInputElement] is sometimes showing instead of the placeholder "your name" in the player name input section. I tried to solve it by adding .value when declaring the variable for the player name, giving an autocomplete attribute to the user input and also tried other suggestions found in the stack overflow website but none of them worked and it is still showing. After entering a player name it does not appear again.
 
 ## **Deployment**
 
@@ -263,7 +265,7 @@ all the letters or when all six body parts are on the gallows.
 
 - The text for the rules screen was taken from [here](http://www.printactivities.com/Paper-Games/Rules-For-Hangman.shtml) and was slightly modified to adapt it to this project.
 - For making the game work I follow this [tutorial](https://www.youtube.com/watch?v=T6uht1A0114&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=24&ab_channel=CodingArtist) and adapted it to this project.
-- Inspiration for the font and to store player names from this nice [project](https://saamauro92.github.io/hangman_game/) from another CI student.
+- Inspiration for the font and to store player names, from this nice [project](https://saamauro92.github.io/hangman_game/) from another CI student.
 
 ### **Media**
 
