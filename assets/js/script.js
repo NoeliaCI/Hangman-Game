@@ -15,9 +15,9 @@ const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
 //Game Sounds
-const winSound = new Audio('assets/sounds/win-sound.wav');
-const loseSound = new Audio('assets/sounds/lose-sound.wav');
-const clickSound = new Audio('assets/sounds/mouse-click.wav');
+const winSound = new Audio('assets/sounds/win-sound.mp3');
+const loseSound = new Audio('assets/sounds/lose-sound.mp3');
+const clickSound = new Audio('assets/sounds/mouse-click.mp3');
 
 const volumeOnBtn = document.getElementById("sound-on");
 const volumeOffBtn = document.getElementById("sound-off");
