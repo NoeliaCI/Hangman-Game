@@ -400,6 +400,11 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("player-name").value =
             localStorage.getItem("player");
     }
-    
-
+    /** This event sets the game taking player name in order to start */
+    playButton.addEventListener("click", function () {
+        //Save player in localStorage
+        player = document.getElementById("player-name").value;
+        localStorage.setItem("player", player);
     });
+
+});
