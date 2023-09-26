@@ -32,9 +32,9 @@ clickSound.volume = 0;
 volumeToggleBtn.addEventListener("click", () => {
     console.log("volume toggle");
     if (volume === 0) {
-        winSound.volume = .7;
-        loseSound.volume = .7;
-        clickSound.volume = .7;
+        winSound.volume = 0.7;
+        loseSound.volume = 0.7;
+        clickSound.volume = 0.7;
         volumeOnBtn.classList.remove("hide");
         volumeOffBtn.classList.add("hide");
         volume = 1;
@@ -50,9 +50,9 @@ volumeToggleBtn.addEventListener("click", () => {
 // //Volume on
 volumeOnBtn.addEventListener("click", () => {
      console.log("volume on");
-     winSound.volume = .7;
-     loseSound.volume = .7;
-     clickSound.volume = .7;
+     winSound.volume = 0.7;
+     loseSound.volume = 0.7;
+     clickSound.volume = 0.7;
      volumeOnBtn.classList.add("hide");
      volumeOffBtn.classList.remove("hide");
  });
