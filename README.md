@@ -1,8 +1,8 @@
 # **HangMan Game**
 
 [HangMan Game](https://noeliaci.github.io/Hangman-Game/) is an online old school game where the goal is
- to find the missing word by guessing letters. The game has three different categories to choose from: Animals, Music Bands
- and Instruments. The player can guess a letter by clicking on it. The game finishes when the player has correctly guessed 
+to find the missing word by guessing letters. The game has three different categories to choose from: Animals, Music Bands
+and Instruments. The player can guess a letter by clicking on it. The game finishes when the player has correctly guessed
 all the letters or when all six body parts are on the gallows.
 
 ![web on different screens](assets/documentation/am-I-responsive/responsive-home.png)
@@ -19,7 +19,7 @@ all the letters or when all six body parts are on the gallows.
     - [**Returning User Goals**](#returning-user-goals)
     - [**Frequent User Goals**](#frequent-user-goals)
   - [**Design**](#design)
-    - [**Color Theme**](#color-theme)
+    - [**Colour Theme**](#colour-theme)
     - [**Font**](#font)
   - [**Wireframes**](#wireframes)
     - [**Desktop**](#desktop)
@@ -51,7 +51,7 @@ all the letters or when all six body parts are on the gallows.
 ## **Target Audience**
 
 - Users who look for interactive online games.
-- Users who want to challenge their language knowdlege.
+- Users who want to challenge their language knowledge.
 - Users who enjoy playing word games.
 
 ## **User Stories**
@@ -74,17 +74,17 @@ all the letters or when all six body parts are on the gallows.
   
 ## **Design**
 
-### **Color Theme**
+### **Colour Theme**
 
 ![colour theme](/assets/documentation/colour-theme.png)
 
-- The colour theme used for this project is a gradient bakground in green tones.
+- The colour theme used for this project is a gradient background in green tones.
 
 ### **Font**
 
 ![font type](/assets/documentation/font.png)
 
-- The font used is Bad Script. This font resembles the handwritting which make it adequate for a words game.
+- The font used is Bad Script. This font resembles the handwriting which makes it adequate for a word game.
 
 ## **Wireframes**
 
@@ -104,9 +104,9 @@ all the letters or when all six body parts are on the gallows.
 
 ### **Header**
 
-- The header contains the title of the game which is centered and emphasized with a text shadow.
-- The title displays in every screen and when clicked, it takes the user back to the home screen.
-- The header also contains a sound button to allow the user decide on playing with or without sound.
+- The header contains the title of the game which is centered and emphasised with a text shadow.
+- The title displays on every screen and when clicked, it takes the user back to the home screen.
+- The header also contains a sound button to allow the user to decide on playing with or without sound.
 
 ![title image](/assets/documentation/features/title.png)
 
@@ -122,7 +122,7 @@ all the letters or when all six body parts are on the gallows.
   - Play - takes the user to the category screen.
   - Rules - takes the user to the rules screen.
   - Both buttons play a sound effect when clicked.
-- The home screen also contains a name form that, when filled, personalizes the result message.
+- The home screen also contains a name form that, when filled, personalises the result message.
 
 ![home screen image](/assets/documentation/features/home-screen.png)
 
@@ -133,7 +133,7 @@ all the letters or when all six body parts are on the gallows.
   - Music Bands
   - Instruments
 - When one category is selected the button turns a different colour and the two other buttons can not be clicked.
-- This screen also displays the canvas where the hangman will be draw.
+- This screen also displays the canvas where the hangman will be drawn.
 
 ![category screen](/assets/documentation/features/categories-screen.png)
 
@@ -152,7 +152,7 @@ all the letters or when all six body parts are on the gallows.
 - The result screen appears when the game is over.
 - It displays  a different message depending on the result of the game.
 - It also displays the correct word and the player name in both messages.
-- It contais two buttons:
+- It contains two buttons:
   - New Game - leads to the category screen to start a new game.
   - Home - leads to the home screen.
 
@@ -225,11 +225,11 @@ all the letters or when all six body parts are on the gallows.
 
 ## **Validators**
 
-- HTML - No errors were found when passing the html file through W3C validator.
+- HTML - No errors were found when passing the html file through the W3C validator.
   
 ![html validator](/assets/documentation/Validators/html-validator.png)
 
-- CSS - No errors were found when passing the css file through W3C validator.
+- CSS - No errors were found when passing the css file through the W3C validator.
 
 ![css validator](/assets/documentation/Validators/css-validator.png)
 
@@ -243,12 +243,11 @@ all the letters or when all six body parts are on the gallows.
 
 ### **Solved**
 
-- When refreshing the web a placeholder saying [object HTMLInputElement] was showing instead of the placeholder "your name" in the player name input section. I solved it by adding .value when declaring the variable for the player name.
-- When trying to set the icon for the sound it didn't respond to any action and the icon with class hide didn't hide. This issue was solved by wrapping the icons inside a button element and placing !important in the hide element in css. Despite not being the best practice for css the solution worked.
+- When trying to set the icon for the sound it didn't respond to any action and the icon with class hide didn't hide at all. This issue was solved by wrapping the icons inside a button element and placing !important in the hide element in css. Despite not being the best practice for css the solution worked.
 
 ### **Unsolved**
 
-- None
+- When entering the web for the first time, a placeholder saying [object HTMLInputElement] is sometimes showing instead of the placeholder "your name" in the player name input section. I tried to solve it by adding .value when declaring the variable for the player name, giving an autocomplete attribute to the user input and also tried other suggestions found in the stack overflow website but none of them worked and it is still showing. After entering a player name it does not happen again.
 
 ## **Deployment**
 
@@ -261,9 +260,10 @@ all the letters or when all six body parts are on the gallows.
 ## **Credits**
 
 ### **Content**
+
 - The text for the rules screen was taken from [here](http://www.printactivities.com/Paper-Games/Rules-For-Hangman.shtml) and was slightly modified to adapt it to this project.
 - For making the game work I follow this [tutorial](https://www.youtube.com/watch?v=T6uht1A0114&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=24&ab_channel=CodingArtist) and adapted it to this project.
-- Inspiration for the font and to store player name from this nice [project](https://saamauro92.github.io/hangman_game/) from another CI student.
+- Inspiration for the font and to store player names from this nice [project](https://saamauro92.github.io/hangman_game/) from another CI student.
 
 ### **Media**
 
@@ -273,5 +273,4 @@ all the letters or when all six body parts are on the gallows.
 - The social media icons are from [Font Awesome](https://fontawesome.com/).
 - The sound effects were taken from [Mixkit](https://mixkit.co/free-sound-effects/lose/).
 - The wireframes were done with [Balsamiq](https://balsamiq.com/wireframes/).
-- To check the responsiveness of the web I used [Am I Responsive](https://ui.dev/amiresponsive) website.
-
+- To check the responsiveness of the web I used the [Am I Responsive](https://ui.dev/amiresponsive) website.
