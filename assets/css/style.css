@@ -219,11 +219,12 @@ canvas {
     margin-top: 30%;
     margin-bottom: 20%;
 }
+
 .new-game-popup {
     color: rgb(255, 250, 250);
     background-color: #252525;
     box-shadow: 0 0 0 100vmax #252525;
-    top: 30%;
+    top: 35%;
     bottom: 0;
     position: absolute;
     width: 100%;
