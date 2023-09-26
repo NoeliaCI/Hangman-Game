@@ -225,20 +225,53 @@ all the letters or when all six body parts are on the gallows.
 
 ## **Validators**
 
+- HTML - No errors were found when passing the html file through W3C validator.
+  
+![html validator](/assets/documentation/Validators/html-validator.png)
+
+- CSS - No errors were found when passing the css file through W3C validator.
+
+![css validator](/assets/documentation/Validators/css-validator.png)
+
+- JavaScript - Two warnings were found when passing the script file through JS Hint.
+
+![script validator](/assets/documentation/Validators/JS-Hint.png)
+
 ## **Lighthouse**
 
 ## **Bugs**
 
 ### **Solved**
 
+- When refreshing the web a placeholder saying [object HTMLInputElement] was showing instead of the placeholder "your name" in the player name input section. I solved it by adding .value when declaring the variable for the player name.
+- When trying to set the icon for the sound it didn't respond to any action and the icon with class hide didn't hide. This issue was solved by wrapping the icons inside a button element and placing !important in the hide element in css. Despite not being the best practice for css the solution worked.
+
 ### **Unsolved**
 
+- None
+
 ## **Deployment**
+
+- This website was deployed to GitHub pages. The steps to deploy are the following:
+  - In the [GitHub repository](https://github.com/NoeliaCI/Hangman-Game), go to the settings tab.
+  - Select the Main Branch from the source menu and click save.
+  - The page will refresh and a message with successful deployment will display if nothing went wrong.
+- The website can also be accessed by the live link here: [HangMan Game](https://noeliaci.github.io/Hangman-Game/).
 
 ## **Credits**
 
 ### **Content**
+- The text for the rules screen was taken from [here](http://www.printactivities.com/Paper-Games/Rules-For-Hangman.shtml) and was slightly modified to adapt it to this project.
+- For making the game work I follow this [tutorial](https://www.youtube.com/watch?v=T6uht1A0114&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=24&ab_channel=CodingArtist) and adapted it to this project.
+- Inspiration for the font and to store player name from this nice [project](https://saamauro92.github.io/hangman_game/) from another CI student.
 
 ### **Media**
 
+- The font used is from [Google Fonts](https://fonts.google.com/specimen/Bad+Script?query=bad).
+- The gradient background was found in this [website](https://gradient.shapefactory.co/?a=2D4C4D&b=A1BC73&d=25).
+- The web icon was downloaded from [Flaticon](https://www.flaticon.com/free-icon/hangman_43980).
+- The social media icons are from [Font Awesome](https://fontawesome.com/).
+- The sound effects were taken from [Mixkit](https://mixkit.co/free-sound-effects/lose/).
+- The wireframes were done with [Balsamiq](https://balsamiq.com/wireframes/).
+- To check the responsiveness of the web I used [Am I Responsive](https://ui.dev/amiresponsive) website.
 
